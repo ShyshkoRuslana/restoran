@@ -9,8 +9,9 @@ private:
     int tablenumber;
     int telnumber;
 public:
+    Customer();
+    Customer(string name, int tablenumber=1, int telnumber=0);
     Customer(int tablenumber);
-    Customer(string name="Guest",int tablenumber=1, int telnumber=0);
     ~Customer();
     void printInfo();
 
