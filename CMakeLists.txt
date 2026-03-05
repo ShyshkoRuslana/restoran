@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(restoran main.cpp
         Dish.cpp
-        Dish.h)
+        Dish.h
+        Order.cpp
+        Order.h)
