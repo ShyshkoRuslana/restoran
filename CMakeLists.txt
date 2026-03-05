@@ -7,4 +7,6 @@ add_executable(restoran main.cpp
         Dish.cpp
         Dish.h
         Order.cpp
-        Order.h)
+        Order.h
+        Customer.cpp
+        Customer.h)
