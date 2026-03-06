@@ -1,5 +1,5 @@
-#ifndef RESTORAN_DISH_H
-#define RESTORAN_DISH_H
+#ifndef DISH_H
+#define DISH_H
 #include <string>
 using namespace std;
 class Dish {

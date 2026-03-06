@@ -5,47 +5,44 @@
 using namespace std;
 int main(){
     cout << "===Customer1===" << endl;
-    Customer c1("Арінка",9,423);
+    Customer c1;
     c1.printInfo();
     cout << "-Dish-" << endl;
-    Dish d1 ("Борщ",85.50,300);
+    Dish d1;
     d1.printInfo();
     cout << "-Order-" << endl;
-    Order o1(23,405);
+    Order o1;
     o1.printInfo();
 
     cout << "===Customer2===" << endl;
-    Customer c2("Соня",6,43);
+    Customer c2("Арінка");
     c2.printInfo();
     cout << "-Dish-" << endl;
-    Dish d2 ("Вареники",300);
+    Dish d2 ("Вареники");
     d2.printInfo();
     cout << "-Order-" << endl;
-    Order o2(34,67);
+    Order o2(34);
     o2.printInfo();
 
     cout << "===Customer3===" << endl;
-    Customer c3(85);
+    Customer c3("Соня", 5);
     c3.printInfo();
     cout << "-Dish-" << endl;
-    Dish d3 ("Олівє");
+    Dish d3 ("Олівє", 67);
     d3.printInfo();
     cout << "-Order-" << endl;
-    Order o3;
+    Order o3(34,6789);
     o3.printInfo();
 
     cout << "===Customer4===" << endl;
-    Customer c4;
+    Customer c4("Ання",9,423);
     c4.printInfo();
     cout << "-Dish-" << endl;
-    Dish d4;
+    Dish d4("Борщ",85.50,300);
     d4.printInfo();
     cout << "-Order-" << endl;
-    Order o4(332,909);
+    Order o4(23,405);
     o4.printInfo();
-
-
-
 
     return 0;
 }

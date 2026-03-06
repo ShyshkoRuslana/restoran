@@ -8,6 +8,7 @@ private:
     double totalsum;
 public:
     Order();
+    Order(int ordernumber);
     Order(int ordernumber, double totalsum);
     ~Order();
     void printInfo();
