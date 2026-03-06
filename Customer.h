@@ -10,8 +10,6 @@ private:
     int telnumber;
 public:
     Customer();
-    //Customer(string name);
-    //Customer(string name, int tablenumber);
     Customer(string name, int tablenumber=1, int telnumber=0);
     ~Customer();
     void printInfo();
