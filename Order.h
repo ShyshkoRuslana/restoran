@@ -14,7 +14,7 @@ public:
     Order(Order&& other);
     ~Order();
     void settotalsum(int ordernumber);
-    void printInfo();
+    void printInfo()const;
 };
 
 #endif

@@ -17,7 +17,7 @@ Customer::~Customer() {}
 void Customer::settablenum(int tablenumber) {
     this->tablenumber=tablenumber;
 }
-void Customer::printInfo() {
+void Customer::printInfo()const{
     cout << "Name: " << name << " | Table namber: " << tablenumber << " | Telephone number: " << telnumber << endl;
 }
 

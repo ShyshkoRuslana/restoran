@@ -26,6 +26,6 @@ void Dish::setprice(double price) {
 }
 Dish::~Dish() {}
 void setprice();
-void Dish::printInfo(){
+void Dish::printInfo()const{
     cout << "Dish: " << name <<  " | Price: " << price << " | Weight: " << weight << endl;
 }

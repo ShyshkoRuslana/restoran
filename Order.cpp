@@ -17,6 +17,6 @@ Order::~Order() {}
 void Order::settotalsum(int ordernumber) {
     this->ordernumber=ordernumber;
 }
-void Order::printInfo(){
+void Order::printInfo()const{
     cout << "Order number: " << ordernumber << " | Total sum: " << totalsum << endl;
 }

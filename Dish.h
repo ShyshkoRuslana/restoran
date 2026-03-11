@@ -16,7 +16,7 @@ public:
     Dish (Dish&& other);
     ~Dish();
     void setprice(double price);
-    void printInfo();
+    void printInfo()const;
 };
 
 #endif
