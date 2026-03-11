@@ -7,6 +7,7 @@ private:
     string name;
     double price;
     double weight;
+    static int count;
 public:
     Dish();
     Dish(string name);
@@ -17,6 +18,8 @@ public:
     ~Dish();
     void setprice(double price);
     void printInfo()const;
+    static int getcount();
+
 };
 
 #endif

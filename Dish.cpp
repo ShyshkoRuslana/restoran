@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Dish.h"
 using namespace std;
-Dish::Dish() : Dish("Unknown", 0.0, 0.0) {}
+//Dish::Dish() : Dish("Unknown", 0.0, 0.0) {}
 Dish::Dish(string name)
     : name(name), price(0.0), weight(0.0) {}
 Dish::Dish(string name, double price) {
@@ -23,6 +23,13 @@ Dish::Dish (Dish&& other){
 }
 void Dish::setprice(double price) {
     this->price=price;
+}
+int Dish::count=0;
+Dish::Dish() {
+    count++;
+}
+int Dish::getcount(){
+    return count;
 }
 Dish::~Dish() {}
 void setprice();
