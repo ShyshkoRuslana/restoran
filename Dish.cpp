@@ -39,3 +39,10 @@ void Dish::printInfo()const{
 void Dish::operator++(){
     price++;
 }
+ostream& operator<<(ostream& out, const Dish &d){
+    out << "Dish=" << d.name << "Price=" << d.price << "Weight=" << d.weight << endl;
+}
+istream& operator>>(istream& in, const Dish& d){
+    cout << "Enter dish: " << endl;
+    in >> d.name;
+}

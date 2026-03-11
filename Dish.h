@@ -20,6 +20,8 @@ public:
     void printInfo()const;
     static int getcount();
     void operator++();
+    friend ostream& operator<< (ostream& out, const Dish &d);
+    friend istream& operator>> (istream& in, const Dish &d);
 
 };
 
