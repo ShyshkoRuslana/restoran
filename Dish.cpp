@@ -11,6 +11,11 @@ Dish::Dish(string name, double price) {
 }
 Dish::Dish(string name, double price, double weight)
     : name(name), price(price), weight(weight) {}
+Dish::Dish(const Dish& other) {
+    name=other.name;
+    price=other.price;
+    weight=other.weight;
+}
 Dish::~Dish() {}
 void Dish::printInfo(){
     cout << "Dish: " << name << endl;

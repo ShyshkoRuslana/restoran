@@ -10,6 +10,7 @@ public:
     Order();
     Order(int ordernumber);
     Order(int ordernumber, double totalsum);
+    Order(const Order& other);
     ~Order();
     void printInfo();
 };
