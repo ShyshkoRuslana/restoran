@@ -9,8 +9,10 @@ Order::Order(int ordernumber, double totalsum)
         :ordernumber(ordernumber),totalsum(totalsum) {}
 Order::Order(const Order& other) {
         ordernumber=other.ordernumber;
-        totalsum=other.totalsum;
-}
+        totalsum=other.totalsum;}
+Order::Order(Order&& other) {
+        ordernumber=other.ordernumber;
+        totalsum=other.totalsum;}
 Order::~Order() {}
 void Order::printInfo(){
     cout << "Order number: " << ordernumber << endl;

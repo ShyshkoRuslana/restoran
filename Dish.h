@@ -13,6 +13,7 @@ public:
     Dish(string name, double price);
     Dish(string name, double price, double weight);
     Dish (const Dish& other);
+    Dish (Dish&& other);
     ~Dish();
     void printInfo();
 };

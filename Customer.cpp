@@ -7,7 +7,11 @@ Customer::Customer(string name, int tablenumber, int telnumber)
 Customer::Customer(const Customer& other){
         name=other.name;
         tablenumber=other.tablenumber;
-        telnumber=other.telnumber;
+        telnumber=other.telnumber;}
+Customer::Customer(Customer&& other) {
+    name=move(other.name);
+    tablenumber=other.tablenumber;
+    telnumber=other.telnumber;
 }
 Customer::~Customer() {}
 void Customer::printInfo() {

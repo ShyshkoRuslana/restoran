@@ -11,6 +11,7 @@ public:
     Order(int ordernumber);
     Order(int ordernumber, double totalsum);
     Order(const Order& other);
+    Order(Order&& other);
     ~Order();
     void printInfo();
 };
