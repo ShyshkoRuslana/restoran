@@ -14,6 +14,7 @@ public:
     Customer(const Customer& other);
     Customer(Customer&& other);
     ~Customer();
+    void settablenum(int tablenumber);
     void printInfo();
 
 };

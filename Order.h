@@ -13,6 +13,7 @@ public:
     Order(const Order& other);
     Order(Order&& other);
     ~Order();
+    void settotalsum(int ordernumber);
     void printInfo();
 };
 

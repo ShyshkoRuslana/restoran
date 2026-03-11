@@ -21,9 +21,11 @@ Dish::Dish (Dish&& other){
     price=other.price;
     weight=other.weight;
 }
+void Dish::setprice(double price) {
+    this->price=price;
+}
 Dish::~Dish() {}
+void setprice();
 void Dish::printInfo(){
-    cout << "Dish: " << name << endl;
-    cout << "Price= " << price << endl;
-    cout << "Weight= " << weight << endl;
+    cout << "Dish: " << name <<  " | Price: " << price << " | Weight: " << weight << endl;
 }

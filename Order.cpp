@@ -14,7 +14,9 @@ Order::Order(Order&& other) {
         ordernumber=other.ordernumber;
         totalsum=other.totalsum;}
 Order::~Order() {}
+void Order::settotalsum(int ordernumber) {
+    this->ordernumber=ordernumber;
+}
 void Order::printInfo(){
-    cout << "Order number: " << ordernumber << endl;
-    cout << "Total sum= " << totalsum << endl;
+    cout << "Order number: " << ordernumber << " | Total sum: " << totalsum << endl;
 }

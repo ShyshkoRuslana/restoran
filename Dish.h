@@ -15,6 +15,7 @@ public:
     Dish (const Dish& other);
     Dish (Dish&& other);
     ~Dish();
+    void setprice(double price);
     void printInfo();
 };
 
