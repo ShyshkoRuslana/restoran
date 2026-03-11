@@ -19,6 +19,7 @@ public:
     void setprice(double price);
     void printInfo()const;
     static int getcount();
+    void operator++();
 
 };
 

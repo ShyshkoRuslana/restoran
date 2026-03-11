@@ -36,3 +36,6 @@ void setprice();
 void Dish::printInfo()const{
     cout << "Dish: " << name <<  " | Price: " << price << " | Weight: " << weight << endl;
 }
+void Dish::operator++(){
+    price++;
+}

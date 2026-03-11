@@ -20,3 +20,8 @@ void Order::settotalsum(int ordernumber) {
 void Order::printInfo()const{
     cout << "Order number: " << ordernumber << " | Total sum: " << totalsum << endl;
 }
+void Order::operator+(const Order &other){
+    Order temp;
+    temp.totalsum= this->totalsum + other.totalsum;
+    cout << "over sum=" << totalsum << endl;
+}
