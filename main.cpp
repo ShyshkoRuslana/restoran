@@ -4,7 +4,7 @@
 #include "Customer.h"
 #include <utility>
 using namespace std;
-int main(){
+int main() {
     cout << "===Customer1===" << endl;
     Customer c1;
     c1.printInfo();
@@ -24,7 +24,7 @@ int main(){
     c2.printInfo();
 
     cout << "-Dish-" << endl;
-    Dish d2 ("Вареники");
+    Dish d2("Вареники");
     d2.printInfo();
 
     cout << "-Order-" << endl;
@@ -38,25 +38,25 @@ int main(){
     c3.printInfo();
 
     cout << "-Dish-" << endl;
-    Dish d3 ("Олівє", 67);
+    Dish d3("Олівє", 67);
     d3.printInfo();
 
     cout << "-Order-" << endl;
-    Order o3(34,6789);
+    Order o3(34, 6789);
     o3.printInfo();
     cout << "-----------------------------" << endl;
 
 
     cout << "===Customer4===" << endl;
-    Customer c4("Ання",9,423);
+    Customer c4("Ання", 9, 423);
     c4.printInfo();
 
     cout << "-Dish-" << endl;
-    Dish d4("Борщ",85.50,300);
+    Dish d4("Борщ", 85.50, 300);
     d4.printInfo();
 
     cout << "-Order-" << endl;
-    Order o4(23,405);
+    Order o4(23, 405);
     o4.printInfo();
     cout << "-----------------------------" << endl;
 
@@ -64,10 +64,10 @@ int main(){
     Customer c5;
     c5.printInfo();
 
-    Dish d5=d4; // copy constructor
+    Dish d5 = d4; // copy constructor
     cout << "copy construct:" << endl;
     d5.printInfo();
-    Dish d6=std::move(d3);
+    Dish d6 = std::move(d3);
     cout << "move const" << endl;
     d6.printInfo();
     ++d2;
@@ -75,12 +75,12 @@ int main(){
     d2.printInfo();
 
 
-    Order o5=o2+o4;
+    Order o5 = o2 + o4;
     cout << "Binary operator + " << endl;
     o5.printInfo();
     cout << "Dish count: " << Dish::getcount() << endl;
 
-    const Dish d7("Салат",50,200);
+    const Dish d7("Салат", 50, 200);
     cout << "Const object:" << endl;
     d7.printInfo();
 

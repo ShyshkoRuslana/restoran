@@ -3,7 +3,7 @@ project(restoran)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(restoran main.cpp
+add_executable(restoran
         Dish.cpp
         Dish.h
         Order.cpp
