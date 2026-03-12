@@ -11,9 +11,12 @@ private:
 public:
     Customer();
     Customer(string name, int tablenumber=1, int telnumber=0);
+
     Customer(const Customer& other);
     Customer(Customer&& other);
+
     ~Customer();
+
     void settablenum(int tablenumber);
     void printInfo()const;
 

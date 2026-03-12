@@ -13,13 +13,18 @@ public:
     Dish(string name);
     Dish(string name, double price);
     Dish(string name, double price, double weight);
+
     Dish (const Dish& other);
     Dish (Dish&& other);
+
     ~Dish();
+
     void setprice(double price);
     void printInfo()const;
-    static int getcount();
     void operator++();
+
+    static int getcount();
+
     friend ostream& operator<< (ostream& out, const Dish &d);
     friend istream& operator>> (istream& in, const Dish &d);
 

@@ -10,12 +10,14 @@ public:
     Order();
     Order(int ordernumber);
     Order(int ordernumber, double totalsum);
+
     Order(const Order& other);
     Order(Order&& other);
+
     ~Order();
-    void settotalsum(int ordernumber);
+
     void printInfo()const;
-    void operator+(const Order& other);
+    Order operator+(const Order& other);
 };
 
 #endif
